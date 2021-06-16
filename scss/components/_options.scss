@@ -1,0 +1,31 @@
+.options {
+    margin: 20px 0 0 0;
+
+    &_label {
+        margin: 0;
+    }
+
+	&__items {
+        width: 100%;
+        margin: 10px 0 0 0;
+        padding: 0;
+        list-style: none;
+    }
+
+	&__item {
+        display: flex;
+        align-items: center;
+        background: #356ba1;
+        
+        height: 50px;
+        margin: 0 0 10px 0;
+        padding: 0 25px;
+        border-radius: 5px;
+        color: #fff;
+    }
+
+    &__item:hover {
+        cursor: pointer;
+    }
+
+}

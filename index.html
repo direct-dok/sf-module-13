@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="header__title">Игра Тик-Так-Бум</h1>
+        </div>
+        <div class="settings">
+            <div class="settings__number-of-players">
+                <label class="settings__label">Количество игроков</label>
+                <div class="settings__wrapper-input">
+                    <input type="number" name="number-of-players" value="2"
+                        class="settings__input settings__set-number-game">
+                </div>
+            </div>
+            <div class="settings__game-time">
+                <label class="settings__label">Установите продолжительность игры</label>
+                <div class="settings__wrapper-input settings__wrapper-input-flex">
+                    <span>1 минута</span>
+                    <input type="range" name="game-time" min="1" max="10" value="2"
+                        class="settings__input settings__range-game-time">
+                        <span>10 минут</span>
+                </div>
+            </div>
+        </div>
+        <div class="control">
+            <div class="control__game-control">
+                <button class="control__start control__btn">Старт игры</button>
+                <button class="control__end control__btn">Закончить игру</button>
+            </div>
+            <div class="control__state-game">
+                <div class="control__current-player">
+                    <span class="control__player-turn">Ход игрока: </span><span class="control__player-number">2</span>
+                </div>
+                <div class="control__current-question">
+                    <span class="control__question">Вопрос </span>
+                    <span class="control__number-question">4</span>
+                    <span class="control__of">из</span>
+                    <span class="control__all-questions">30</span>
+                </div>
+            </div>
+        </div>
+        <div class="game">
+            <div class="game__response-status __response-status--success game__response-status--errror">Верно</div>
+            <div class="game__timer">
+                <div class="game__timer-wrapper">
+                    <div class="game__minuts">01</div>
+                    <div class="game__separator">:</div>
+                    <div class="game__seconds">34</div>
+                </div>
+            </div>
+        </div>
+        <div class="question">
+            <div class="question__label">Вопрос:</div>
+            <p class="question__text">Столица Италии?</p>
+        </div>
+        <div class="options">
+            <p class="options_label question__label">Выберите верный ответ:</p>
+            <ul class="options__items">
+                <li class="options__item">
+                    Ватикан
+                </li>
+                <li class="options__item">
+                    Рим
+                </li>
+                <li class="options__item">
+                    Ватикан
+                </li>
+                <li class="options__item">
+                    Рим
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
